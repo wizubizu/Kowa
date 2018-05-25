@@ -1,0 +1,284 @@
+
+/*=================================================================
+  @media screen 1440px
+==================================================================*/
+
+
+@media screen and (min-width: 1440px){
+   
+}
+
+/*=================================================================
+  @media screen 1199px
+==================================================================*/
+
+
+@media screen and (max-width: 1199px){
+   
+  .__conbtn {
+    margin-left: 252px;
+   }
+
+
+}
+
+
+/*=================================================================
+  @media screen 1220px
+==================================================================*/
+
+
+@media screen and (min-width: 1220px){
+  .__overlay {
+     min-height: 687px ;
+  }
+
+  .__navt {
+    margin-left: 35px;
+  }
+
+  .__footbg {
+    padding: 47px;
+  }
+
+
+
+
+}
+
+
+/*=================================================================
+  @media screen 1024px
+==================================================================*/
+
+
+@media screen and (max-width: 1024px){
+
+  .__navbg1 {
+    padding: 15px 8px;
+  }
+
+  .__fot {
+    font-size: 14px;
+  }
+
+  .__conbtn {
+    margin-left: 268px;
+  }
+
+  .__footbg {
+    height: 100%;
+    background-color: #20273e;
+    padding: 15px;
+  }
+
+}
+
+
+/*=================================================================
+  @media screen 992px
+==================================================================*/
+
+
+@media screen and (max-width: 992px){
+    
+}
+
+
+/*=================================================================
+  @media screen 800px
+==================================================================*/
+
+@media screen and (max-width: 800px){
+
+	
+  .__slidp {
+    width: 587px;
+  }
+
+  .__abimg {
+    width: 100%;
+  }
+
+  .__abimgov {
+    width: 345px;
+  }
+
+  .__mbg {
+    height: 100%;
+    margin-top: 0%;
+  }
+
+  .__nesn {
+    font-size: 25px;
+  }
+
+  .__helpus {
+    height: 100%;
+  }
+
+  .__helndbt {
+    padding: 6px;
+  }
+
+  .__hel {
+    font-size: 30px;
+  }
+	
+  .__footbg {
+    height: 100%;
+    padding: 15px;
+  }
+
+  .__conbtn {
+   margin-left: 180px;
+  }
+
+  .__fot {
+    font-size: 10px;
+  }
+
+}
+
+
+/*=================================================================
+  @media screen 560px
+==================================================================*/
+
+
+  @media screen and (max-width: 560px){
+
+  	.__logo {
+    height: 52px;
+    }
+
+    .__slidp h1 {
+    font-size: 20px;
+    }
+
+    .__slidp h3 {
+    font-size: 13px;
+    }
+
+    .__slidp {
+    width: 310px;
+    }
+
+    .fade-carousel .slides .slide-1, 
+    .fade-carousel .slides .slide-2,
+    .fade-carousel .slides .slide-3,
+    .carousel-inner {
+    height: 297px;
+    }
+
+   .carousel-indicators {
+    bottom: 196px;
+    }
+
+    .fade-carousel {
+    height: 100%;
+  }
+
+
+    .__carodimg {
+    height: 40px;
+    }
+
+
+    .__ko {
+     width: 100%;
+    }
+
+    .__abimg {
+    width: 100%;
+    }
+
+    .__abimgov {
+    width: 283px;
+    }
+
+    .__jour {
+    font-size: 25px;
+    margin-top: 11%;
+  }
+
+  .__mbg {
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .__watb {
+    font-size: 30px;
+    }
+
+  .__emve {
+    margin-top: 3%;
+  }
+
+  .__nesn {
+    font-size: 25px;
+  }
+
+  .__neho {
+    font-size: 15px;
+  }
+
+  .__nedm {
+    font-size: 15px;
+  }
+
+  .__helndbt {
+    padding: 13px;
+  }
+
+  .__helpus {
+    height: 100%;
+  }
+
+    .__footbg {
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .__conbtn {
+    bottom: 0px;
+    margin-left: 104px;
+  }
+
+  .__fot {
+    font-size: 14px;
+  }
+
+  .__rig {
+    font-size: 12px;
+  }
+
+  .__abu {
+    font-size: 28px;
+  }
+
+  .__helbtn {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+
+  .__fuec {
+    font-family: AvenirNextLTPro-Demi;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    color: #505050;
+    margin-top: 18px;
+}
+
+.__fuv {
+    height: 100% !important;
+}
+    
+
+
+}
+
