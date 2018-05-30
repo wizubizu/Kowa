@@ -1,0 +1,480 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="assets/img/favicon_findworka.png">
+	<title>KOWA</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
+	
+	
+
+
+	<!-- WEBFONT -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+<body class="">
+
+	<header>
+		<nav class="navbar __navbg" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="img-responsive __logo"></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<!-- <ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form> -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html" class="__navf">HOME</a></li>
+						<li class="dropdown __navfdr">
+							<a href="#" class="dropdown-toggle __navf" data-toggle="dropdown">ABOUT US <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="__drli">How KOWA Started</a></li>
+								<li><a href="#" class="__drli">Manifesto</a></li>
+								<li class="dropdown-submenu">
+				                	<a class="test __drli" tabindex="-1" href="#">Views on Nation Building</a>
+				                	<ul class="dropdown-menu">
+					                  	<li><a href="#" class="__drli">Board of Trustees</a></li>
+					                  	<li><a href="#" class="__drli">The National Executive Committee</a></li>
+					                  	<li><a href="#" class="__drli">The State Executive Committee</a></li>
+					                </ul>
+				              	</li>
+								<li><a href="#" class="__drli">Party Leadership</a></li>
+								
+							</ul>
+						</li>
+						<li><a data-toggle="modal" href='#modal-id' class="__navf">DONATE</a></li>
+						<li class="dropdown __navfdr">
+							<a href="#" class="dropdown-toggle __navf" data-toggle="dropdown">JOIN KOWA <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a data-toggle="modal" href='#modal-id1' class="__drli">Update Membership</a></li>
+								<li><a href="join_kowa.html" class="__drli">New Member</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html" class="__navf">CONTACT US</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+		<!-- donate modal -->
+
+		<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog __donmoda">
+				<div class="modal-content">
+					<div class="modal-header __donln">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center"><img src="assets/img/logo.png"></h4>
+					</div>
+					<div class="modal-body">
+						<p class="__donamo">Donate to KOWA party to make a difference</p>
+
+						<div class="row text-center">
+							<div class="col-md-4 col-xs-4">
+								<a data-toggle="modal" href='#modal-idn' data-dismiss="modal" class="btn __donamobtn">#500</a>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a data-toggle="modal" href='#modal-idn' data-dismiss="modal" class="btn __donamobtn">#1000</a>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a data-toggle="modal" href='#modal-idn' data-dismiss="modal" class="btn __donamobtn">#5000</a>
+							</div>
+						</div><br>
+
+						<div class="row text-center">
+							<div class="col-md-4 col-xs-4">
+								<a data-toggle="modal" href='#modal-idn' data-dismiss="modal" class="btn __donamobtn">#10000</a>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a data-toggle="modal" href='#modal-idn' data-dismiss="modal" class="btn __donamobtn">#20000</a>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a href="" class="btn __donamobtno">Other<br> Amount</a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer __donln">
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
+		<div class="modal fade" id="modal-idn">
+			<div class="modal-dialog __donmoda">
+				<div class="modal-content">
+					<div class="modal-header __donln">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center"><img src="assets/img/logo.png"></h4>
+					</div>
+					<div class="modal-body">
+						<p class="__donamo">Please enter your email address and click next to Donate</p>
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-9">
+								<div class="form-group">
+									<label for="" class="__joinla">Email Address</label>
+									<input type="email" class="form-control __joinfo" id="" placeholder="">
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+					</div>
+					<div class="modal-footer __donln">
+						<div class="row">
+							<div class="col-md-4 col-xs-2"></div>
+							<div class="col-md-4 col-xs-8">
+								<button type="button" data-dismiss="modal" class="btn __donabtnnx">Next</button>
+							</div>
+							<div class="col-md-4 col-xs-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- donate modal end -->
+
+		<!-- update member modal -->
+		<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
+		<div class="modal fade" id="modal-id1">
+			<div class="modal-dialog __donmoda">
+				<div class="modal-content">
+					<div class="modal-header __donln">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center __upd">Update Membership</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-9">
+								<div class="form-group">
+									<label for="" class="__joinla">Membership Code</label>
+									<input type="text" class="form-control __joinfo" id="" placeholder="">
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+					</div>
+					<div class="modal-footer __donln">
+						<div class="row">
+							<div class="col-md-4 col-xs-2"></div>
+							<div class="col-md-4 col-xs-8">
+								<button type="button" data-dismiss="modal" data-toggle="modal" href='#modal-id2' class="btn __donabtnnx">Send</button>
+							</div>
+							<div class="col-md-4 col-xs-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-id2">
+			<div class="modal-dialog __donmoda">
+				<div class="modal-content">
+					<div class="modal-header __donln">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center __upd">Profile Information</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-5 col-xs-4"></div>
+							<div class="col-md-3 col-xs-4">
+								<img src="assets/img/boy.png" class="img-responsive __updim">
+							</div>
+							<div class="col-md-4 col-xs-4"></div>
+						</div>
+
+						<p class="__updf">Full Name: <span class="__upds">Abimbola Dada</span></p>
+						<p class="__updf">Email Address: <span class="__upds">abimbola@mail.com</span></p>
+						<p class="__updf">Membership Code: <span class="__upds">7748494</span></p>
+
+						<div class="__updp">
+							<p class="__updp1">Pay membership due for the year at ₦1,000 </p>
+						</div>
+					</div>
+					<div class="modal-footer __donln">
+						<div class="row">
+							<div class="col-md-4 col-xs-2"></div>
+							<div class="col-md-4 col-xs-8">
+								<button type="button" data-dismiss="modal" class="btn __donabtnnx">Next</button>
+							</div>
+							<div class="col-md-4 col-xs-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="__navbg1">
+			<div class="row">
+				<div class="col-md-4 col-sm-3"></div>
+				<div class="col-md-6 col-sm-9">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-6 ">
+							<div class="dropdown">
+							  	<a href="" class="dropdown-toggle __navf1"  data-toggle="dropdown">RESOURCES
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+									<li><a href="#">JavaScript</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 ">
+							<div class="dropdown">
+							  	<a href="" class="dropdown-toggle __navf1"  data-toggle="dropdown">ELECTION
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Pick Nomination form </a></li>
+									<li><a href="vote_guidline.html">E-Voting Guidelines </a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 ">
+							<div class="dropdown">
+							  	<a href="" class="dropdown-toggle __navf1"  data-toggle="dropdown">MEDIA
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="press.html">Press Clippings </a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 "><a href="faq.html" class="__navf1">FAQ</a></div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</header>
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h2 class="__joink">Membership page</h2>
+
+					<form action="" method="POST" role="form">
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<div class="__picture">
+					                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhRsMOMIvyfi-rD07o9Fa6DzkaeahYPqYu_KWfNtW1ShsxGxa"
+					                  class="picture_src img-circle" id="picture_preview" alt="" >
+					                <input class="img_container" type="file" id="upload" name="file">
+					                <p class="btn __picupbtn">Upload Image</p>
+					            </div>
+					            <p class="__joinch">Change Profile Image Max file size is 1MB</p>
+							</div>
+							<div class="col-md-9 col-sm-9">
+								<div class="row __joir">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">First Name</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Last Name</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="" class="__joinla">Email Address</label>
+									<input type="email" class="form-control __joinfo" id="" placeholder="">
+								</div>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Date of Birth</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Age</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Country</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Phone Number</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">State of origin</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">LGA of origin</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="" class="__joinla">Address</label>
+									<input type="text" class="form-control __joinfo" id="" placeholder="">
+								</div>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Resident LGA</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="form-group">
+											<label for="" class="__joinla">Gender</label>
+											<input type="text" class="form-control __joinfo" id="" placeholder="">
+										</div>
+									</div>
+								</div>
+
+								<div class="__joinf">
+									<p><b>Pledge</b><br><span class="__joinin">I solemnly declare that I will abide by the aims and objectives of KOWA Party as set out in the Constitution, and support any other dully adopted policy positions; that I am joining the Party voluntarily and without motive of material advantage or personal gain; that I agree to respect the Constitution and the structures and to work as a loyal member of the Party; that I will place my energies and skills at the disposals of the Party and carry out task given to me; that I will work towards making KOWA Party an even more effective organization; and that I will defend the unity and integrity of the Party and its principles, and combat and tendency towards disruption, corruption and factionalism.</span></p>
+								</div>
+
+								<div class="__joinchk">
+									<input type="checkbox" id="check2">
+									<label for="check2" class="__lebel">
+										I agree
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 col-sm-6"></div>
+							<div class="col-md-4 col-sm-4">
+								<button type="submit" class="btn __joinsubbtn">Next</button>
+							</div>
+							<div class="col-md-2 col-sm-2"></div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div><br><br>
+	</section>
+	
+
+	<footer>
+		<div class="__footbg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<h4 class="__fot">ABOUT</h4>
+						<p><a href="" class="__fotp">Mission</a></p>
+						<p><a href="" class="__fotp">Manifesto</a></p>
+						<p><a href="" class="__fotp">Trustees</a></p>
+						<p><a href="" class="__fotp">Contact us</a></p>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<h4 class="__fot">DONATE</h4>
+						<p><a href="" class="__fotp">Volunteers</a></p>
+						<p><a href="" class="__fotp">Donate Funds</a></p>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<h4 class="__fot">INITIATIVES</h4>
+						<p><a href="" class="__fotp">Health</a></p>
+						<p><a href="" class="__fotp">Finance</a></p>
+						<p><a href="" class="__fotp">Agric</a></p>
+						<p><a href="" class="__fotp">Education</a></p>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<h4 class="__fot">SUBSCRIBE TO OUR NEWSLETTER</h4><br>
+						<form action="" method="POST" role="form">
+							<div class="form-group">
+								<input type="text" class="form-control __con" id="" placeholder="Email">
+							</div>
+						
+							<button type="submit" class="btn __conbtn"><i class="far fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div><br>
+				<p class="__rig">© 2018 KowaParty. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+		
+
+
+	
+
+
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

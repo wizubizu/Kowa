@@ -82,389 +82,56 @@ var appz = {
 
 
 
-// findworka js///
+// kowa js///
+    app.imageHandler();
 
-// slide in and out
-
-$(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-});
-
-
-// end
-
-
-
-// show and hide select 
-    $('#dbType').on('change',function(){
-        if( $(this).val()==="other"){
-        $("#otherType").show()
-        }
-        else{
-        $("#otherType").hide()
+    $("[data-toggle=popover]").popover({
+        html: true, 
+        content: function() {
+            return $('#popover-content').html();
         }
     });
 
-    $('#dbType1').on('change',function(){
-        if( $(this).val()==="other"){
-        $("#otherType1").show()
-        }
-        else{
-        $("#otherType1").hide()
-        }
-    });
-
-
-    $('#states').on('change',function(){
-        if( $(this).val()==="other"){
-        $("#otherType").show()
-        $("#states").hide();
-        }
-        else{
-        $("#otherType").hide()
-        }
-    });
-    // end
-
-// only number
-
-    $(document).ready(function () {
-      //called when key is pressed in textbox
-      $("#quantity").keypress(function (e) {
-         //if the letter is not digit then display error and don't type anything
-         if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-            //display error message
-            $("#errmsg").html("Numbers Only").show().fadeOut("slow");
-                   return false;
-        }
-       });
-    });
-
-     $(document).ready(function () {
-      //called when key is pressed in textbox
-      $("#quantity1").keypress(function (e) {
-         //if the letter is not digit then display error and don't type anything
-         if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-            //display error message
-            $("#errmsg1").html("Numbers Only").show().fadeOut("slow");
-                   return false;
-        }
-       });
-    });
-
-// end
-
-
-//for the next and previous form 
-
-
-
-$("#continuebtn").click(function (){
-    var ownerType = $('.__selectind').val();
-    if (ownerType === 'developer') {
-        $('#Third-Div').hide();
-        $('#First-Div').hide();
-        $('#Second-Div').hide();
-        $('#Forth-Div').show();
-        $('#Five-Div').hide();
-    }else if(ownerType === 'designer'){
-        $('#Forth-Div').hide();
-        $('#Third-Div').hide();
-        $('#Second-Div').show();
-        $('#First-Div').hide();
-        $('#Five-Div').hide();
-    }else if(ownerType === "select"){
-        alert('Please select Designer or Developer');
-        $('#First-Div').show();
-        $('#Third-Div').hide();
-        $('#Second-Div').hide();
-    }
-});
-
-
-// validate form
-
-function validate() {
-
-     
-
-    if (document.myform.name.value == "") {
-        $("#First-Div").css("display", "block");
-        $("#Second-Div").css("display", "none");
-        alert("Please provide your first name, last name");
-        document.myform.name.focus();
-
-        return false;
-    }
-
-    if (document.myform.email.value == "") {
-        $("#First-Div").css("display", "block");
-        $("#Second-Div").css("display", "none");
-        alert("Please provide your email");
-        document.myform.email.focus();
-        return false;
-    }
-    
-
-    if (document.myform.quantity.value == "") {
-        alert("Please provide your phone Number");
-        $("#First-Div").css("display", "block");
-        $("#Second-Div").css("display", "none");
-        document.myform.quantity.focus();
-        return false;
-    }
-
-    if (document.myform.stack.value == "-1") {
-        alert("Please Select your Stack");
-        $("#First-Div").css("display", "block");
-        $("#Second-Div").css("display", "none");
-        document.myform.stack.focus();
-        return false;
-    }
-
-    if (document.myform.mentor.value == "") {
-        alert("Please provide ur phone Number");
-        $("#First-Div").css("display", "block");
-        $("#Second-Div").css("display", "none");
-        document.myform.mentor.focus();
-        return false;
-    }
-    // return(true);
-}
-
-
-function validateEmail() {
-    var emailID = document.myform.email.value;
-    atpos = emailID.indexOf("@");
-    dotpos = emailID.indexOf(".");
-
-    if (atpos < 1 || ( dotpos - atpos < 2)) {
-        alert("pls enter correct email ID")
-        document.myform.email.focus();
-        return false;
-    }
-    // return( true);
-}
-
-// end
-
-
-
-
-
-function showNextForm() {
-        $("#First-Div").css("display", "none");
-        $("#Second-Div").css("display", "block");
-    };
-
-    function showNextForm1() {
-        $("#Second-Div").css("display", "none");
-        $("#Third-Div").css("display", "block");
-    };
-
-    function showNextForm2() {
-        $("#Third-Div").css("display", "none");
-        $("#Five-Div").css("display", "block");
-    };
-
-    function showNextForm3() {
-        $("#Forth-Div").css("display", "none");
-        $("#Five-Div").css("display", "block");
-    };
-
-    // previous 
-    function showPrevForm() {
-        $("#Second-Div").css("display", "none");
-        $("#First-Div").css("display", "block");
-        $("#Forth-Div").css("display", "none");
-    };
-
-    function showPrevForm1() {
-        $('#Third-Div').css("display", "none");
-        $('#Second-Div').css("display", "block");
-        $('#First-Div').css("display", "none");
-        $("#Five-Div").css("display", "none");
-        $("#Forth-Div").css("display", "none");
-    };
-
-    function showPrevForm2() {
-        $("#Forth-Div").css("display", "block");
-        $("#Third-Div").css("display", "none");
-         $("#Five-Div").css("display", "none");
-    };
-
-
-    function showPrevForm3() {
-        var ownerType = $('.__selectind').val();
-        if (ownerType === 'developer') {
-            $('#First-Div').css("display", "none");
-            $('#Second-Div').css("display", "none");
-            $('#Forth-Div').css("display", "none");
-            $("#Five-Div").css("display", "none");
-            $("#Third-Div").css("display", "block");
-        }else if(ownerType === 'designer'){
-            $('#Third-Div').css("display", "none");
-            $('#Second-Div').css("display", "none");
-            $('#First-Div').css("display", "none");
-            $("#Five-Div").css("display", "none");
-            $("#Forth-Div").css("display", "block");
-        }
-    };
-
-
-    //fileupload for individual
-        $('input[id=base-input4]').change(function() {
-        $('#fake-input4').val($(this).val().replace("C:\\fakepath\\", ""));
+    // dropdown
+    $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
         });
-
-        //fileupload for both
-        $('input[id=base-input5]').change(function() {
-        $('#fake-input5').val($(this).val().replace("C:\\fakepath\\", ""));
-        });
-// end
-
-
-
-// tooltip
-
-$(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
-        });
-
-
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-        })
-
-// end
-
-
-// faq
-$(document).ready(function() {
-    $('.accordion').find('.accordion-toggle').click(function() {
-        $(this).next().slideToggle('600');
-        $(".accordion-content").not($(this).next()).slideUp('600');
     });
-    $('.accordion-toggle').on('click', function() {
-        $(this).toggleClass('active').siblings().removeClass('active');
+
+    // accordion
+    var acc = document.getElementsByClassName("__accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+
+    // download PDF
+    var doc = new jsPDF();
+    var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+        return true;
+        }
+    };
+
+    $('#cmd').click(function () {
+        doc.fromHTML($('#content').html(), 15, 15, {
+            'width': 170,
+            'elementHandlers': specialElementHandlers
+        });
+        doc.save('guidelines on electronic voting.pdf');
     });
-});
-
-// faq end
-
-
-// clock js
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Clock = function () {
-  function Clock(id) {
-    _classCallCheck(this, Clock);
-
-    this.timezone = parseInt(document.getElementById(id).dataset.timezone);
-
-    if (this.isDST(new Date())) {
-      this.timezone += 1;
-    }
-
-    this.handSeconds = document.querySelector("#" + id + " .hand.seconds");
-    this.handMinutes = document.querySelector("#" + id + " .hand.minutes");
-    this.handHours = document.querySelector("#" + id + " .hand.hours");
-
-    this.getTime();
-    this.cycle();
-  }
-
-  _createClass(Clock, [{
-    key: "isDST",
-    value: function isDST(now) {
-      var jan = new Date(now.getFullYear(), 0, 1);
-      var jul = new Date(now.getFullYear(), 6, 1);
-      var dst = Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
-
-      return now.getTimezoneOffset() < dst;
-    }
-  }, 
-  {
-    key: "draw",
-    value: function draw(hours, minutes, seconds) {
-      var drawSeconds = seconds / 60 * 360 + 90;
-      var drawMinutes = minutes / 60 * 360 + 90;
-
-      if (hours >= 12) {
-        drawHours = hours - 12;
-      }
-
-      var drawHours = hours / 12 * 360 + 90;
-
-      this.handSeconds.style.transform = "rotate(" + drawSeconds + "deg)";
-      this.handMinutes.style.transform = "rotate(" + drawMinutes + "deg)";
-      this.handHours.style.transform = "rotate(" + drawHours + "deg)";
-
-      // fix for animation bump on when clock hands hit zero
-      if (drawSeconds === 444 || drawSeconds === 90) {
-        this.handSeconds.style.transition = "all 0s ease 0s";
-      } else {
-        this.handSeconds.style.transition = "all 0.05s cubic-bezier(0, 0, 0.52, 2.51) 0s";
-      }
-    }
-  }, 
-  {
-    key: "getTime",
-    value: function getTime() {
-      var now = new Date();
-
-      var hours = now.getUTCHours() + this.timezone;
-      var minutes = now.getUTCMinutes();
-      var seconds = now.getUTCSeconds();
-
-      this.draw(hours, minutes, seconds);
-    }
-  }, 
-  {
-    key: "cycle",
-    value: function cycle() {
-      setInterval(this.getTime.bind(this), 1000);
-    }
-  }]);
-
-  return Clock;
-}();
-
-new Clock('fwka');
-new Clock('fwka1');
-new Clock('fwka2');
-
-// this is just a rough draft for some effects
-// const shadowOkinawa = document.querySelector("#okinawa .shadow");
-// const shadowSeattle = document.querySelector("#seattle .shadow");
-// const shadowAmalfi = document.querySelector("#amalfi .shadow");
-
-// const handleMouseMove = (event) => {
-//   const percent = parseInt((100 * event.pageX) / window.innerWidth);
-//   const drawShadow = (0.22 * percent) - 50;
-
-//   shadowOkinawa.style.transform = `rotate(${drawShadow}deg)`;
-//   shadowSeattle.style.transform = `rotate(${drawShadow}deg)`;
-//   shadowAmalfi.style.transform = `rotate(${drawShadow}deg)`;
-// };
-
-// document.onmousemove = handleMouseMove;
-
-// end
-
-
-
 
 
 

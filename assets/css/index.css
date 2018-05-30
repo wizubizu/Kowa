@@ -6,6 +6,11 @@
 
 @media screen and (min-width: 1440px){
    
+   .__carodimg {
+    width: 1440px;
+  }
+
+
 }
 
 /*=================================================================
@@ -71,6 +76,45 @@
     background-color: #20273e;
     padding: 15px;
   }
+
+  .__helndbt {
+    padding: 53px;
+  }
+
+  .__presimgov {
+    width: 455px;
+  }
+
+  .__prelat {
+    margin-left: 124px;
+  }
+
+  .__prelis {
+    font-size: 18px;
+    padding: 59px 0px;
+  }
+
+  .__audsing {
+    padding: 0px;
+  }
+
+  .__audt{
+    width: 285px;
+  }
+
+  .__vivi {
+    width: 100%;
+  }
+
+  .__fulvi {
+    width: 100%;
+  }
+  .__dnavf {
+    font-size: 20px;
+  }
+
+
+  
 
 }
 
@@ -138,6 +182,115 @@
     font-size: 10px;
   }
 
+  .__pres {
+    font-size: 18px;
+  }
+
+  .__preskow {
+    font-size: 18px;
+  }
+
+  .__presimg {
+    width: 100%;
+  }
+
+  .__presimgov {
+    width: 344px;
+    padding: 15px;
+  }
+  .__presk {
+    font-size: 15px;
+  }
+
+  .__prelat {
+    margin-left: 69px;
+    margin-top: -92px;
+  }
+
+  .__prest1img {
+    width: 100%;
+    height: 102px;
+  }
+  .__prestkow {
+    font-size: 12px;
+  }
+
+  .__prebtn {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+  }
+
+  .__presby {
+    font-size: 10px;
+  }
+
+  .__prsa {
+    font-size: 15px;
+  }
+
+  .__prestimg {
+    width: 100%;
+  }
+
+  .__predimg {
+    width: 100%;
+  }
+
+  .__prelis {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+
+  .__predp {
+    font-size: 12px;
+  }
+
+  .__preimg {
+    width: 100%;
+    height: 100%;
+  }
+  .__audsing {
+    padding: 0px;
+  }
+
+  .__audt{
+    width: 214px;
+  }
+
+  .__vivi {
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .__contmap {
+    /*width: 100%;*/
+    padding: 15px;
+  }
+
+  .__contf {
+    margin-top: 31%;
+  }
+
+  .__fuec {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .__fulvi {
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .__fulimg {
+    width: 100%;
+    height: 100% !important;
+  }
+
+
+
+
+
 }
 
 
@@ -172,7 +325,7 @@
     }
 
    .carousel-indicators {
-    bottom: 196px;
+    bottom: 0px;
     }
 
     .fade-carousel {
@@ -191,10 +344,11 @@
 
     .__abimg {
     width: 100%;
+    margin-bottom: 10px;
     }
 
     .__abimgov {
-    width: 283px;
+    width: 290px;
     }
 
     .__jour {
@@ -241,6 +395,10 @@
     text-align: center;
   }
 
+  .__hel {
+    font-size: 26px;
+  }
+
   .__conbtn {
     bottom: 0px;
     margin-left: 104px;
@@ -265,20 +423,186 @@
   }
 
   .__fuec {
-    font-family: AvenirNextLTPro-Demi;
     width: 100%;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1.4px;
-    color: #505050;
-    margin-top: 18px;
-}
+    font-size: 16px;
+   margin-top: 18px;
+  }
 
-.__fuv {
+  .__fulvi {
+    width: 100%;
     height: 100% !important;
-}
+  }
+
+  .__fulimg {
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .__fuv {
+    height: 100% !important;
+  }
+
+  .__newsimg {
+    width: 100%;
+  }
+
+  .__preskow {
+    font-size: 15px;
+  }
+
+  .__prsa {
+    font-size: 15px;
+  }
+
+  .__presimgov {
+    width: 289px;
+    padding: 13px;
+  }
     
 
+  .__prestimg {
+    width: 100%;
+  }
+
+  .__prest1img {
+    width: 100%;
+  }
+
+  .__prelat {
+    margin-left: 190px;
+  }
+
+  .__prebtn {
+    width: 100%;
+     height: 100%; 
+   font-size: 12px;
+  }
+
+  .__presk {
+    font-size: 12px;
+  }
+
+  .__predimg {
+    width: 100%;
+  }
+
+  .__prelis {
+    padding: 20px 0px;
+  }
+
+  .__pret {
+    font-size: 14px;
+  }
+
+  .__predp {
+    font-size: 12px;
+  }
+
+
+  .__picture {
+    width: 100%;
+  }
+
+  .__joinla {
+    font-size: 12px;
+  }
+
+  .__joinf {
+    font-size: 15px;
+  }
+
+  .__joinin {
+    font-size: 12px;
+  }
+
+  .__lebel {
+    font-size: 16px;
+  }
+
+  .__joinsubbtn {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+
+  .__auds1 {
+    padding-right: 15px;
+  }
+
+  .__auds2 {
+    padding: 0px 15px;
+  }
+
+  .__auds3 {
+    padding-left: 15px;
+  }
+
+  .__audserbtn {
+    width: 100%;
+  }
+
+  .__audsing {
+    padding: 0px;
+  }
+
+  .__audt {
+    width: 281px;
+  }
+
+  .__vivi {
+    width: 100%;
+  }
+
+  .__contmap {
+    /*width: 100%;*/
+    padding: 15px;
+  }
+
+  .__donamo {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .__donamobtn {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .__donamobtno {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  .__updp {
+    width: 100%;
+    height: 100%;
+  }
+
+  .__drli{
+    color: #ffffff !important;
+  }
+
+  .__guif {
+    font-size: 13px;
+  }
+
+  .__succ {
+    font-size: 12px;
+  } 
+
+  .__idcov {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .__dnavbg {
+    height: 100%;
+    padding-top: 13px;
+  }
 
 }
 

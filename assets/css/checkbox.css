@@ -1,0 +1,44 @@
+input[type="checkbox"] {
+  display: none;
+}
+.__lebel {
+  cursor: pointer;
+  font-family: AvenirNextLTPro-Demi;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  color: #7a7a7a ;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+input[type="checkbox"] + .__lebel:before {
+  border: 0.6px solid #82bb1a;
+  content: "\00a0";
+  display: inline-block;
+  /* font: 16px/1em sans-serif; */
+ /* height: 25px;
+  width: 25px;
+  margin: 0 8px 0 0;*/
+      height: 19.2px;
+    width: 19.2px;
+    /*margin: 3px 0 0 0;*/
+  padding: 0;
+  vertical-align: top;
+  border-radius: 2.4px;
+}
+input[type="checkbox"]:checked + .__lebel:before {
+  /*padding-top: 2px;*/
+  padding-top: 0px;
+  background: #82bb1a;
+  color: white;
+  /*font-size: 14px;*/
+  font-size: 11px;
+  content: "\2714";
+  /* padding-bottom: 1.5px; */
+  text-align: center;
+  /*border-color: white;*/
+  border-color: #82bb1a;
+  border-radius: 2.4px;
+}
+
+
