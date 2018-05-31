@@ -287,6 +287,15 @@
     height: 100% !important;
   }
 
+  .__fump {
+    padding: 18px 29px;
+  }
+
+  .__fulvimg {
+    width: 100%;
+    height: 100px !important;
+  }
+
 
 
 
@@ -602,6 +611,27 @@
   .__dnavbg {
     height: 100%;
     padding-top: 13px;
+  }
+
+  .__fupn {
+    font-size: 20px;
+  }
+
+  .__fulimgs {
+    width: 100%;
+    height: 100%;
+  }
+
+  .__fulc {
+    padding: 15px 0px;
+  }
+
+  .__fump {
+    padding: 12px 17px;
+  }
+
+  .radio-inline {
+    padding-left: 15px;
   }
 
 }

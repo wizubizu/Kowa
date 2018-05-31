@@ -150,8 +150,8 @@
 							<div class="col-md-9">
 								<div class="form-group">
 									<label for="" class="__joinla">Email Address</label>
-									<input type="email" class="form-control __joinfo" id="" placeholder="">
-								</div>
+									<input type="email" class="form-control __joinfo"  />   
+	                        	</div>
 							</div>
 							<div class="col-md-1"></div>
 						</div>
@@ -186,7 +186,7 @@
 							<div class="col-md-9">
 								<div class="form-group">
 									<label for="" class="__joinla">Membership Code</label>
-									<input type="text" class="form-control __joinfo" id="" placeholder="">
+									<input type="text" class="form-control __joinfo" id="" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="" required>
 								</div>
 							</div>
 							<div class="col-md-1"></div>
@@ -318,20 +318,22 @@
 							<div class="col-md-6 col-sm-6 col-xs-6">
 								<div class="form-group">
 									<label for="" class="__joinla">Name</label>
-									<input type="text" class="form-control __joinfo" id="" placeholder="">
+									<input type="text" class="form-control __joinfo" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
+									<div id="errFirst"></div>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-6">
 								<div class="form-group">
 									<label for="" class="__joinla">Phone Number</label>
-									<input type="text" class="form-control __joinfo" id="" placeholder="">
+									<input type="text" class="form-control __joinfo" name="phonenumber" id="phone" class="form-control phone" maxlength="2" onkeyup="validatephone(this);" placeholder="" required>
 								</div>
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="" class="__joinla">Email Address</label>
-							<input type="email" class="form-control __joinfo" id="" placeholder="">
+							<input type="email" class="form-control __joinfo" name="email" id = "email"  onchange="email_validate(this.value);" required />   
+	                        <div class="status" id="status"></div>
 						</div>
 
 						<div class="form-group">
@@ -361,12 +363,12 @@
 						<p><a href="" class="__fotp">Mission</a></p>
 						<p><a href="" class="__fotp">Manifesto</a></p>
 						<p><a href="" class="__fotp">Trustees</a></p>
-						<p><a href="" class="__fotp">Contact us</a></p>
+						<p><a href="contact.html" class="__fotp">Contact us</a></p>
 					</div>
 					<div class="col-md-3 col-sm-3">
 						<h4 class="__fot">DONATE</h4>
 						<p><a href="" class="__fotp">Volunteers</a></p>
-						<p><a href="" class="__fotp">Donate Funds</a></p>
+						<p><a data-toggle="modal" href='#modal-id' class="__fotp">Donate Funds</a></p>
 					</div>
 					<div class="col-md-3 col-sm-3">
 						<h4 class="__fot">INITIATIVES</h4>

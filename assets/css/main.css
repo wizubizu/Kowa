@@ -709,6 +709,10 @@ i#closebtn {
   color: #942925;
 }
 
+.__fmor:hover{
+  color: #942925 !important;
+}
+
 
 .__abu{
   font-family: AvenirNextLTPro-Demi;
@@ -1551,6 +1555,7 @@ transition: all 0.4s ease-in;
     color: #942925;
     margin: 0 auto 30px auto;
     width: 362px;
+    line-height: 1.2;
 }
 
 .__donamobtn {
@@ -2049,6 +2054,81 @@ transition: all 0.4s ease-in;
     outline: none !important;
 }
 
+.__fulc{
+  padding: 15px 50px;
+}
+
+.__fulimgs{
+ /* width: 670px;*/
+    height: 315px;
+  border-radius: 4px;
+}
+
+.__fued{
+  font-family: AvenirNextLTPro-Demi;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #942925;
+}
+
+
+.__fupn{
+  font-family: AvenirNextLTPro-Regular;
+  font-size: 38px;
+  text-align: center;
+  color: #3b3b3b;
+  line-height: 1.2;
+}
+.__fp{
+  font-family: AvenirNextLTPro-Regular;
+  font-size: 16px;
+  color: #3b3b3b;
+}
+
+.__fum{
+  background-color: #942925;
+}
+
+.__fump{
+  font-family: AvenirNextLTPro-Demi;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 18px 114px;
+}
+
+
+.__lr{
+  width: 52px; 
+  background: transparent !important;
+  height: 276px;
+  padding-top: 10%;
+}
+
+.__futh{
+  border: none;
+}
+
+.__fulvimg{
+  width: 100%;
+  height: 180px !important;
+  border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.__fuledi{
+  font-family: AvenirNextLTPro-Medium;
+  color: #d0021b;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.__fuledi1{
+  font-family: AvenirNextLTPro-Regular;
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 
 

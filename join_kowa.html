@@ -17,7 +17,7 @@
 	<!-- CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/checkbox.css"> -->
 	
 	
 
@@ -150,8 +150,8 @@
 							<div class="col-md-9">
 								<div class="form-group">
 									<label for="" class="__joinla">Email Address</label>
-									<input type="email" class="form-control __joinfo" id="" placeholder="">
-								</div>
+									<input type="email" class="form-control __joinfo"  />   
+	                        	</div>
 							</div>
 							<div class="col-md-1"></div>
 						</div>
@@ -186,7 +186,7 @@
 							<div class="col-md-9">
 								<div class="form-group">
 									<label for="" class="__joinla">Membership Code</label>
-									<input type="text" class="form-control __joinfo" id="" placeholder="">
+									<input type="text" class="form-control __joinfo" id="" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="" required>
 								</div>
 							</div>
 							<div class="col-md-1"></div>
@@ -295,7 +295,7 @@
 				<div class="col-md-8">
 					<h2 class="__joink">Membership page</h2>
 
-					<form action="" method="POST" role="form">
+					<form action="" method="POST" role="form" id="fileForm">
 						<div class="row">
 							<div class="col-md-3 col-sm-3">
 								<div class="__picture">
@@ -311,33 +311,37 @@
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">First Name</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
+											<div id="errFirst"></div>   
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">Last Name</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="" required />  
+											<div id="errLast"></div>
 										</div>
 									</div>
 								</div>
 
 								<div class="form-group">
 									<label for="" class="__joinla">Email Address</label>
-									<input type="email" class="form-control __joinfo" id="" placeholder="">
+									<input type="email" class="form-control __joinfo" name="email" id = "email"  onchange="email_validate(this.value);" required />   
+	                        		<div class="status" id="status"></div>
 								</div>
 
 								<div class="row">
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">Date of Birth</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" placeholder="21/03/1980" id="dob" onchange="dob_validate(this.value);" required />   
+	                        				<div class="statusDOB" id="statusDOB"></div>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">Age</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" name="phonenumber" id="phone" class="form-control phone" maxlength="2" onkeyup="validatephone(this);" placeholder="" required>
 										</div>
 									</div>
 								</div>
@@ -346,13 +350,13 @@
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">Country</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" id="" placeholder="" required>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">Phone Number</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" id="" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="" required>
 										</div>
 									</div>
 								</div>
@@ -374,21 +378,26 @@
 
 								<div class="form-group">
 									<label for="" class="__joinla">Address</label>
-									<input type="text" class="form-control __joinfo" id="" placeholder="">
+									<input type="text" class="form-control __joinfo" id="address" placeholder="" required>
 								</div>
 
 								<div class="row">
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
 											<label for="" class="__joinla">Resident LGA</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
+											<input type="text" class="form-control __joinfo" id="" placeholder="" required>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="form-group">
-											<label for="" class="__joinla">Gender</label>
-											<input type="text" class="form-control __joinfo" id="" placeholder="">
-										</div>
+											<label for="" class="__joinla">Gender</label><br><br>
+											<label class="radio-inline">
+										      	<input type="radio" name="optradio">Male
+										    </label>
+										    <label class="radio-inline">
+										      	<input type="radio" name="optradio">Female
+										    </label>
+    									</div>
 									</div>
 								</div>
 
@@ -397,11 +406,10 @@
 								</div>
 
 								<div class="__joinchk">
-									<input type="checkbox" id="check2">
-									<label for="check2" class="__lebel">
-										I agree
-									</label>
+									<input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms" class="">I agree </label>
 								</div>
+
+
 							</div>
 						</div>
 
@@ -429,12 +437,12 @@
 						<p><a href="" class="__fotp">Mission</a></p>
 						<p><a href="" class="__fotp">Manifesto</a></p>
 						<p><a href="" class="__fotp">Trustees</a></p>
-						<p><a href="" class="__fotp">Contact us</a></p>
+						<p><a href="contact.html" class="__fotp">Contact us</a></p>
 					</div>
 					<div class="col-md-3 col-sm-3">
 						<h4 class="__fot">DONATE</h4>
 						<p><a href="" class="__fotp">Volunteers</a></p>
-						<p><a href="" class="__fotp">Donate Funds</a></p>
+						<p><a data-toggle="modal" href='#modal-id' class="__fotp">Donate Funds</a></p>
 					</div>
 					<div class="col-md-3 col-sm-3">
 						<h4 class="__fot">INITIATIVES</h4>
