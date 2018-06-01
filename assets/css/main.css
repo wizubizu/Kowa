@@ -765,7 +765,7 @@ transition: all 0.4s ease-in;
 
 .__abimg{
   width: 262px;
-  height: 250px;
+  height: 200px;
   border-radius: 4px;
   box-shadow: 0 2px 3px 2px rgba(206, 206, 206, 0.5);
 }
@@ -774,7 +774,7 @@ transition: all 0.4s ease-in;
   position: absolute;
     bottom: 0px;
     width: 262px;
-    height: 80px;
+    height: 50px;
     opacity: 0.79;
     border-radius: 2px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.64), #b8e986);
@@ -786,27 +786,28 @@ transition: all 0.4s ease-in;
   font-weight: 600;
   letter-spacing: 1.1px;
   color: #282828;
-  margin: 35px 30px;
+  margin: 19px 30px;
 }
 
 .__jour{
   font-family: AvenirNextLTPro-Medium;
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.39;
   letter-spacing: 2.2px;
   color: #6b231f;
-  margin-top: 8%;
+  margin-top: -1%;
 }
 
 .__ko{
-  font-family: AvenirNextLTPro-Medium;
-  width: 456px;
-  font-size: 16px;
+  font-family: AvenirNextLTPro-Regular;
+  /*width: 456px;*/
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.39;
-  letter-spacing: 0.6px;
+  line-height: 1.47;
+  letter-spacing: 0.3px;
   color: #303030;
+  text-align: justify;
 }
 
 .__abkow{
@@ -816,21 +817,22 @@ transition: all 0.4s ease-in;
   line-height: 1.21;
   letter-spacing: 1.5px;
   color: #6b231f;
-  margin-top: 9%;
+  margin-top: 11%;
 }
 
 .__df{
-  font-family: AvenirNextLTPro-Medium;
-  font-size: 16px;
+  font-family: AvenirNextLTPro-Regular;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.47;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: #303030;
+  text-align: justify;
 }
 
 .__redm{
-  font-family: AvenirNextLTPro-Medium;
-  font-size: 25px;
+  font-family: AvenirNextLTPro-Regular;
+  font-size: 16px;
   font-weight: 500;
   color: #3f7600 !important;
 }
@@ -859,12 +861,13 @@ transition: all 0.4s ease-in;
 }
 
 .__wats{
-  font-family: AvenirNextLTPro-Medium;
+  font-family: AvenirNextLTPro-Regular;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.47;
-  letter-spacing: 0.5px;
-  color: #6a6a6a;
+  letter-spacing: 0.2px;
+  color: #2e2d2d;
+  text-align: justify;
 }
 
 .__oum{
@@ -877,16 +880,17 @@ transition: all 0.4s ease-in;
 }
 
 .__outh{
-  font-family: AvenirNextLTPro-Medium;
-  font-size: 17px;
+  font-family: AvenirNextLTPro-Regular;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.47;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   color: #2e2d2d;
+  text-align: justify;
 }
 
 .__emve{
-  margin-top: 43%;
+  margin-top: 49%;
 }
 
 .__newsb{
@@ -915,19 +919,21 @@ transition: all 0.4s ease-in;
 
 .__nesn{
   font-family: AvenirNextLTPro-Regular;
-  font-size: 25px;
+  font-size: 18px;
   color: #3b3b3b;
+  text-align: justify;
 }
 
 .__neho{
   font-family: AvenirNextLTPro-Regular;
-  font-size: 20px;
+  font-size: 15px;
   color: #666666;
+  text-align: justify;
 }
 
 .__nedm{
-  font-family: AvenirNextLTPro-Medium;
-  font-size: 20px;
+  font-family: AvenirNextLTPro-Regular;
+  font-size: 16px;
   font-weight: 500;
   color: #3f7600 !important;
   cursor: pointer;
@@ -1018,9 +1024,9 @@ transition: all 0.4s ease-in;
 }
 
 .__footbg{
-  height: 250px;
+  /*height: 250px;*/
   background-color: #20273e;
-  padding: 60px;
+  padding: 25px 60px 2px !important;
   /*margin-top: 5%;*/
 }
 
@@ -1192,9 +1198,9 @@ transition: all 0.4s ease-in;
 
 .__preskow{
   font-family: AvenirNextLTPro-Demi;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 1.38;
   letter-spacing: 2.3px;
   color: #000000 !important;
@@ -1227,11 +1233,11 @@ transition: all 0.4s ease-in;
 }
 
 .__prebtn{
-  width: 124px;
-  height: 38px;
+  width: 92px;
+  height: 31px;
   border-radius: 3px;
   background-color: #82bb1a;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: #ffffff !important;
 }
@@ -1341,8 +1347,9 @@ transition: all 0.4s ease-in;
   font-family: AvenirNextLTPro-Medium;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.3px;
   color: #484848;
+  text-align: justify;
 }
 
 .__preimg{
@@ -1456,6 +1463,10 @@ transition: all 0.4s ease-in;
     color: #ffffff;
 }
 
+.__joiff{
+  margin-top: 12%;
+}
+
 .__joir{
   margin-top: 7%;
 }
@@ -1496,7 +1507,7 @@ transition: all 0.4s ease-in;
 
 .__joinf{
   /*width: 673px;*/
-  font-family: AvenirNextLTPro-Demi;
+  font-family: AvenirNextLTPro-Regular;
   height: 243px;
   background-color: #f2f2f2;
   border: solid 1px #e1e1e1;
@@ -1505,9 +1516,10 @@ transition: all 0.4s ease-in;
     overflow-x: hidden;
     font-size: 18px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
   color: #444444;
   margin-top: 5%;
+  text-align: justify;
 }
 
 .__joinf::-webkit-scrollbar {
@@ -1519,7 +1531,7 @@ transition: all 0.4s ease-in;
 
 .__joinin{
   font-size: 13px;
-  font-family: AvenirNextLTPro-Medium;
+  font-family: AvenirNextLTPro-Regular;
 }
 
 .__joinchk{
@@ -1548,7 +1560,7 @@ transition: all 0.4s ease-in;
 
 .__donamo {
     font-family: AvenirNextLTPro-Demi;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 3px;
     text-align: center;
@@ -1853,7 +1865,7 @@ transition: all 0.4s ease-in;
 
 .__guif {
     /* width: 673px; */
-    font-family: AvenirNextLTPro-Medium;
+    font-family: AvenirNextLTPro-Regular;
     height: 273px;
     background-color: #f2f2f2;
     border: solid 1px #e1e1e1;
@@ -1865,7 +1877,7 @@ transition: all 0.4s ease-in;
     line-height: 1.5;
     letter-spacing: -0.2px;
     color: #212121;
-    /*margin-top: 5%;*/
+    text-align: justify;
 }
 
 .__guif::-webkit-scrollbar {
@@ -1898,7 +1910,7 @@ transition: all 0.4s ease-in;
 
 .__succ{
   font-family: AvenirNextLTPro-Demi;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   line-height: 1.2;

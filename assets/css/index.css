@@ -60,7 +60,31 @@
 @media screen and (max-width: 1024px){
 
   .__navbg1 {
-    padding: 15px 8px;
+    padding: 15px 5px;
+  }
+
+  .__abimgov {
+    width: 213px;
+  }
+
+  .__jour {
+    font-size: 22px;
+  }
+
+  .__ko {
+    font-size: 13px;
+  }
+
+  .__abkow {
+    font-size: 22px;
+  }
+
+  .__df {
+    font-size: 13px;
+  }
+
+  .__wats {
+    font-size: 15px;
   }
 
   .__fot {
@@ -73,8 +97,12 @@
 
   .__footbg {
     height: 100%;
-    background-color: #20273e;
-    padding: 15px;
+    padding: 15px !important;
+  }
+
+  .__sid {
+    font-size: 15px;
+    margin: 19px 20px;
   }
 
   .__helndbt {
@@ -148,15 +176,28 @@
     width: 345px;
   }
 
+  .__jour {
+    margin-top: 3%;
+  }
+
+  .__abkow {
+    margin-top: 5%;
+  }
+
   .__mbg {
     height: 100%;
     margin-top: 0%;
   }
 
   .__nesn {
-    font-size: 25px;
+    font-size: 20px;
   }
 
+  .__helbtn {
+    width: 183px;
+    height: 43px;
+    padding-top: 10px;
+  }
   .__helpus {
     height: 100%;
   }
@@ -171,7 +212,7 @@
 	
   .__footbg {
     height: 100%;
-    padding: 15px;
+    padding: 15px !important;
   }
 
   .__conbtn {
@@ -347,22 +388,22 @@
     }
 
 
-    .__ko {
-     width: 100%;
-    }
-
     .__abimg {
     width: 100%;
     margin-bottom: 10px;
     }
 
     .__abimgov {
-    width: 290px;
+    width: 283px;
     }
 
     .__jour {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 11%;
+  }
+
+  .__abkow {
+    font-size: 20px;
   }
 
   .__mbg {
@@ -371,15 +412,28 @@
   }
 
   .__watb {
-    font-size: 30px;
-    }
+    font-size: 20px;
+  }
+
+  .__wats {
+    font-size: 14px;
+  }
+
+  .__oum {
+    font-size: 20px;
+  }
+
+  .__outh {
+    font-size: 14px;
+  }
+
 
   .__emve {
     margin-top: 3%;
   }
 
   .__nesn {
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .__neho {
@@ -400,7 +454,7 @@
 
     .__footbg {
     height: 100%;
-    padding: 0px;
+    padding: 0px !important;
     text-align: center;
   }
 
