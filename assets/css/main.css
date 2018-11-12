@@ -1737,6 +1737,7 @@ transition: all 0.4s ease-in;
     -webkit-border-radius: 0 6px 6px 6px;
     -moz-border-radius: 0 6px 6px;
     border-radius: 0 6px 6px 6px;
+    transition: all 0.4s ease-in;
 }
 
 .dropdown-submenu:hover>.dropdown-menu {
@@ -1755,6 +1756,7 @@ transition: all 0.4s ease-in;
     border-left-color: #ccc;
     margin-top: 5px;
     margin-right: -10px;
+    transition: all 0.4s ease-in;
 }
 
 .dropdown-submenu:hover>a:after {
@@ -1774,8 +1776,14 @@ transition: all 0.4s ease-in;
 }
 
 
+.dropdown-menu>li>a{
+    padding: 11px;
+    transition: all 0.4s ease-in;
+}
+
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    background-color: transparent;
+    background:#942925;
+    color: #ffffff;
 }
 
 .__fq{

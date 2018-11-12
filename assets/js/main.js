@@ -80,7 +80,7 @@ var appz = {
 }
 
 
-
+ 
 
 // kowa js///
     app.imageHandler();
@@ -125,7 +125,7 @@ var appz = {
 
 
 
-
+// joinkowa form validation
 
     function checkPass()
 {
@@ -157,7 +157,7 @@ var appz = {
 } 
 
 
-// joinkowa form validation
+
     function validatephone(phone) 
         {
             var maintainplus = '';
